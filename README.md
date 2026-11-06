@@ -1,25 +1,25 @@
-# Automação Telpark Webportal
+# Telpark Web Portal Automation
 
-Testes automatizados com Selenium e Pytest (Page Object) para as funcionalidades de Login e Veículos do portal web.
+Automated tests built with Selenium and Pytest (Page Object Model) covering the Login and Vehicles functionalities of the web portal.
 
-## ## Testes cobertos
+## ## Covered Tests
 
-* Login com sucesso
-* Login sem sucesso (intencional)
-* Adicionar veículo com sucesso para o país "Other"
-* Remover veículo com sucesso
+* Successful login
+* Unsuccessful login (intentional)
+* Add vehicle successfully selecting "Other" as country
+* Remove vehicle successfully
 
-## ## Estrutura
+## ## Structure
 
-* **data.py**: dados de teste (URL, credenciais, matrícula)
-* **pages.py**: Page Object com locators e acções
-* **main.py**: testes com asserts
-* **requirements.txt**: dependências
+* **data.py**: test data (URL, credentials, license plate)
+* **pages.py**: Page Object containing locators and actions
+* **main.py**: test suite with asserts
+* **requirements.txt**: project dependencies
 
-## ## Como rodar
+## ## How to Run
 
-1. Instale o Python 3 e o Google Chrome.
-2. Crie e ative o ambiente virtual.
-3. Instale as dependências: `pip install -r requirements.txt`
-4. Preencha os dados em `data.py` com uma conta de teste.
+1. Install Python 3 and Google Chrome.
+2. Create and activate your virtual environment.
+3. Install the dependencies: `pip install -r requirements.txt`
+4. Fill in the data fields in `data.py` with a test account.
 5. Execute: `pytest main.py -v`
